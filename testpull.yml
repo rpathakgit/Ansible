@@ -1,5 +1,8 @@
 ---
-- name: Pull a release from git
-  github_release:
-    repo: "https://github.com/rpathakgit/Ansible.git"
-    action: latest_release
+- name: Defining hosts
+  hosts: all
+- tasks:
+   - name: Pull a release from git
+     github_release:
+       repo: "https://github.com/rpathakgit/Ansible.git"
+       action: latest_release
